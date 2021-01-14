@@ -48,10 +48,16 @@ class App extends Component {
         <Toggle render = {() => (
         <>
           {/* HOC Component Goes Here */}
+          {/* <HOC list={artists} genre=''/> */}
+          <HOC list={artists} genre='Rap'/>
+          <HOC list={artists} genre='Alternative'/>
         </>
         )} />
         <h1>Render Props</h1>
         {/* Render Props Component Goes Here */}
+        {/* <RenderProp render={props => props('', artists)} /> */}
+        <RenderProp render={props => props('Alternative', artists)} />
+        <RenderProp render={props => props('Rap', artists)} />
       </div>
     );
   }

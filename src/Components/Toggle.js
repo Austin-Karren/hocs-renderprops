@@ -12,7 +12,9 @@ class Toggle extends Component {
     render(){
         return (
             <div>
-                <button onClick = {this.handleToggle}>{this.state.visible ? 'hide' : 'show'}</button>
+                <button onClick={this.handleToggle}>
+                    {this.state.visible ? 'hide' : 'show'}
+                </button>
                 {this.state.visible && this.props.render()}
             </div>
         )
